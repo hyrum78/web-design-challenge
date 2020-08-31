@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+    <!-- HEADER -->
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- BOOTSTRAP -->    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- CSS STYLESHEET -->    
+        <link rel="stylesheet" href="../Resources/styles.css" media="screen">
+        
+        <title>TEMPERATURE ANALYSIS</title>
+
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class = "navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">NAVIGATION</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-default" href="../landing_page.html">MAIN</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" style="color: #ffffff" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../visualizations/v_temp.html">TEMPERATURE</a>
+                                </li>
+                                <li>
+                                    <a href="../visualizations/v_humidity.html">HUMIDITY</a>
+                                </li>
+                                <li>
+                                    <a href="../visualizations/v_cloudiness.html">CLOUDINESS</a>
+                                </li>
+                                <li>
+                                    <a href="../visualizations/v_wind.html">WIND SPEED</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-default" style="color: #ffffff" href="../Comparisons.html">COMPARISONS</a>
+                        </li>
+                        <li>
+                            <a class = "navbar-default" style="color: #ffffff" href="../Data.html">SOURCE DATA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- ANALYSIS SECTION -->
+        <div class="container">
+            <div class="row row-grid">
+                <div class="col-md-7">
+                    <div class="S1">
+                        <section id="intro">
+                            <h1>TEMPERATURE</h1>
+                            <hr>
+                            <figure>
+                                <a target="_blank" href="../visualizations/v_temp.html">
+                                    <img id="main-photo" src="../Resources/assets/max_temp.png" alt="latitude v weather">
+                                </a>
+                            </figure>
+                            <!-- WRITEUP -->
+                            <section id="analysis-text">
+                                <p>The graph above shows an obvious trend of weather becoming warmer the closer you travel towards the equator. Surprise!</p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- VIZ SECTION -->
+                <div class="col-md-5">
+                    <div class="S2">
+                        <h2>VISUALIZATIONS</h2>
+                        <hr>
+                        <div class="row">
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="../visualizations/v_temp.html">
+                                        <img id="viz-photo" src="../Resources/assets/max_temp.png" alt="Latitude v Temperature">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="../visualizations/v_humidity.html">
+                                        <img id="viz-photo" src="../Resources/assets/humidity.png" alt="Latitude v Humidity">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="../visualizations/v_cloudiness.html">
+                                        <img id="viz-photo" src="../Resources/assets/cloudiness.png" alt="Latitude v Cloudiness">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="../visualizations/v_wind.html">
+                                        <img id="viz-photo" src="../Resources/assets/wind.png" alt="Latitude v Wind Speed">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class = "footer navbar-fixed-bottom">
+            <div class = "footer-content"></div>
+            <p class = "footer-text">
+                &copy; Latitude With a Bad Attitude
+            </p>
+        </footer>
+
+        <!-- JAVASCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
+    </body>
+</html>

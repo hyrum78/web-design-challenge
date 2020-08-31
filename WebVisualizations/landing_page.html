@@ -1,71 +1,142 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+
+    <!-- HEADER -->
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
-        <title>Latitude With a Bad Attitude</title>
-        
-        <!-- Boostrap Stylesheet -->    
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- CSS stylesheet -->    
+        <!-- BOOTSTRAP -->    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- CSS STYLESHEET -->    
         <link rel="stylesheet" href="Resources/styles.css" media="screen">
-        <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+        
+        <title>MAIN PAGE</title>
 
     </head>
+
     <body>
-        <div class="jumbotron">
-            <h1 class="display-4">Latitude With a Bad Attitude</h1>
-            <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
-                After assembling the dataset, Matplotlib was used to plot various aspects of weather vs. latitude. Factors analyzed included: temperature, cloudiness, wind-speed and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                </p>
-            
-           
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                </ul>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class = "navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">NAVIGATION</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-default" href="landing_page.html">MAIN</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" style="color: #ffffff" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="visualizations/v_temp.html">TEMPERATURE</a>
+                                </li>
+                                <li>
+                                    <a href="visualizations/v_humidity.html">HUMIDITY</a>
+                                </li>
+                                <li>
+                                    <a href="visualizations/v_cloudiness.html">CLOUDINESS</a>
+                                </li>
+                                <li>
+                                    <a href="visualizations/v_wind.html">WIND SPEED</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-default" style="color: #ffffff" href="Comparisons.html">COMPARISONS</a>
+                        </li>
+                        <li>
+                            <a class = "navbar-default" style="color: #ffffff" href="Data.html">SOURCE DATA</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+    
+        <!-- MAIN SECTION -->
+        <div class="container">
+            <div class="row row-grid">
+                <div class="col-md-7">
+                    <div class="S1">
+                        <section id="intro">
+                            <h1>ANALYSIS SUMMARY</h1>
+                            <hr>
+                            <figure>
+                                <a target="_blank" href="visualizations/v_temp.html">
+                                    <img id="main-photo" src="Resources/assets/max_temp.png" alt="latitude v weather">
+                                </a>
+                            </figure>
+                            <!-- WRITEUP -->
+                            <section id="analysis-text">
+                                <p>This project was designed to analyze weather changes based on a city’s distance from the equator. The project data was sourced through an OpenWeatherMap API for ~ 500 cities.</p>
+                                <p>The four factors analyzed include: temperature, cloudiness, wind-speed and humidity.  This site displays source data, visualizations created with the data, and brief summarizations of any observations, trends, or correlations within the dataset.</p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
 
+                <!-- VIZ SECTION -->
+                <div class="col-md-5">
+                    <div class="S2">
+                        <h2>VISUALIZATIONS</h2>
+                        <hr>
+                        <div class="row">
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="visualizations/v_temp.html">
+                                        <img id="viz-photo" src="Resources/assets/max_temp.png" alt="Latitude v Temperature">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="visualizations/v_humidity.html">
+                                        <img id="viz-photo" src="Resources/assets/humidity.png" alt="Latitude v Humidity">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="visualizations/v_cloudiness.html">
+                                        <img id="viz-photo" src="Resources/assets/cloudiness.png" alt="Latitude v Cloudiness">
+                                    </a>
+                                </figure>
+                            </div>
+                            <!-- RESIZEABLE SCREEN -->
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <figure>
+                                    <a href="visualizations/v_wind.html">
+                                        <img id="viz-photo" src="Resources/assets/wind.png" alt="Latitude v Wind Speed">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- FOOTER -->
+        <footer class = "footer navbar-fixed-bottom">
+            <div class = "footer-content"></div>
+            <p class = "footer-text">
+                &copy; Latitude With a Bad Attitude
+            </p>
+        </footer>
 
-
-
-
-
-           
+        <!-- JAVASCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"></script>
     </body>
-
-
-
 </html>
